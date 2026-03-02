@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Ranjan Barman — Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+</head>
+<body>
+
+<div id="cur"></div>
+<div id="ring"></div>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#hero" class="logo">Ranjan.</a>
+  <ul class="nav-links">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#certificates">Certificates</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="theme-toggle" id="themeToggle" title="Toggle theme" aria-label="Toggle dark/light mode">
+      <span class="icon-moon">🌙</span>
+      <span class="icon-sun">☀️</span>
+    </button>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Nav Overlay -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="#hero" class="mob-link">Home</a>
+  <a href="#services" class="mob-link">Services</a>
+  <a href="#skills" class="mob-link">Skills</a>
+  <a href="#projects" class="mob-link">Projects</a>
+  <a href="#certificates" class="mob-link">Certificates</a>
+  <a href="#contact" class="mob-link">Contact</a>
+  <a href="#" id="mobileCvBtn" class="mob-link" style="color:var(--red)">⬇ Resume</a>
+</div>
+
+<!-- ═══ HERO ═══ -->
+<section id="hero">
+
+  <!-- Avatar -->
+  <div class="avatar-wrap">
+    <div class="av-glow"></div>
+    <div class="av-ring1"></div>
+    <div class="av-ring2"></div>
+    <div class="av-circle">
+      <!-- Replace this div with <img src="your-photo.jpg" style="width:100%;height:100%;object-fit:cover"/> -->
+      <div class="av-initials">RB</div>
+    </div>
+    <div class="av-badge"><span class="badge-dot"></span> Available for Work</div>
+  </div>
+
+  <!-- Text -->
+  <div class="hero-text">
+    <h1 class="hero-greeting">Hi, It's <span>Ranjan</span></h1>
+    <div class="hero-typing-line">
+      I'm a&nbsp;<span class="typing-text" id="typed"></span><span class="typed-cursor"></span>
+    </div>
+    <p class="hero-desc">
+      A passionate <strong>Full-Stack Developer</strong> who builds robust, scalable web applications. Currently exploring <strong>AI integrations</strong> to create intelligent experiences that actually matter.
+    </p>
+    <div class="social-row">
+      <a href="https://linkedin.com" target="_blank" class="soc" title="LinkedIn">
+        <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zM7.12 20.45H3.57V9h3.55v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.73V1.73C24 .77 23.21 0 22.23 0z"/></svg>
+      </a>
+      <a href="https://github.com" target="_blank" class="soc" title="GitHub">
+        <svg viewBox="0 0 24 24"><path d="M12 .3a12 12 0 00-3.79 23.4c.6.1.82-.26.82-.57v-2c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.09-.73.09-.73 1.2.09 1.83 1.24 1.83 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.11-3.17 0 0 1-.32 3.3 1.23a11.5 11.5 0 016 0c2.28-1.55 3.29-1.23 3.29-1.23.65 1.65.25 2.87.12 3.17.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.69.83.57A12 12 0 0012 .3z"/></svg>
+      </a>
+      <a href="https://twitter.com" target="_blank" class="soc" title="Twitter/X">
+        <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.74l7.73-8.835L1.254 2.25H8.08l4.213 5.567L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      </a>
+      <a href="https://instagram.com" target="_blank" class="soc" title="Instagram">
+        <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+      </a>
+    </div>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-hire"><span>Hire Me</span></a>
+      <a href="#" class="btn-download" id="heroCvBtn" download>
+        <span><span class="dl-icon">⬇</span> Download CV</span>
+      </a>
+      <a href="#projects" class="btn-cv">View Work</a>
+    </div>
+  </div>
+</section>
+<hr/>
+
+<!-- ═══ SERVICES ═══ -->
+<section id="services">
+  <div class="sec-label rev">What I Do</div>
+  <h2 class="sec-h rev">My <span>Services</span></h2>
+  <p class="sec-sub rev">From concept to deployment — I build end-to-end solutions that are fast, scalable, and intelligent.</p>
+  <div class="srv-grid">
+    <div class="srv-card rev d1">
+      <div class="srv-n">01</div>
+      <div class="srv-title">Frontend Development</div>
+      <div class="srv-desc">Clean, responsive interfaces built with semantic HTML, modern CSS, and JavaScript. Pixel-perfect layouts that work on every device.</div>
+    </div>
+    <div class="srv-card rev d2">
+      <div class="srv-n">02</div>
+      <div class="srv-title">Backend Development</div>
+      <div class="srv-desc">Robust REST APIs with Node.js & Express. JWT authentication, role-based access, and MongoDB database design for production-grade apps.</div>
+    </div>
+    <div class="srv-card rev d3">
+      <div class="srv-n">03</div>
+      <div class="srv-title">AI Integration</div>
+      <div class="srv-desc">Bridging web applications with intelligent AI systems. Building smart features that understand context and enhance user experience.</div>
+    </div>
+  </div>
+</section>
+<hr/>
+
+<!-- ═══ SKILLS ═══ -->
+<section id="skills">
+  <div class="skills-top">
+    <div>
+      <div class="sec-label rev">Tech Stack</div>
+      <h2 class="sec-h rev">My <span>Skills</span></h2>
+    </div>
+    <p class="skills-note rev">8 technologies. Each chosen with purpose and wielded with precision.</p>
+  </div>
+  <div class="sk-grid">
+    <div class="sk-card rev"><div class="sk-ico" data-skill="HTML"><img src="assets/icons/html5.svg" alt="HTML" class="sk-svg"/></div><div class="sk-name">HTML</div><div class="sk-desc">Semantic, accessible markup — the solid backbone of every interface.</div></div>
+    <div class="sk-card rev d1"><div class="sk-ico" data-skill="CSS"><img src="assets/icons/css3.svg" alt="CSS" class="sk-svg"/></div><div class="sk-name">CSS</div><div class="sk-desc">Responsive layouts, transitions, and animations that feel natural.</div></div>
+    <div class="sk-card rev d2"><div class="sk-ico" data-skill="JavaScript"><img src="assets/icons/javascript.svg" alt="JavaScript" class="sk-svg"/></div><div class="sk-name">JavaScript</div><div class="sk-desc">Dynamic interactions, async logic, and browser-native APIs.</div></div>
+    <div class="sk-card rev d3"><div class="sk-ico" data-skill="Node.js"><img src="assets/icons/nodejs.svg" alt="Node.js" class="sk-svg"/></div><div class="sk-name">Node.js</div><div class="sk-desc">Server-side runtime for scalable, event-driven applications.</div></div>
+    <div class="sk-card rev"><div class="sk-ico" data-skill="Express"><img src="assets/icons/express.svg" alt="Express" class="sk-svg"/></div><div class="sk-name">Express</div><div class="sk-desc">Minimal, flexible framework for building powerful REST APIs.</div></div>
+    <div class="sk-card rev d1"><div class="sk-ico" data-skill="MongoDB"><img src="assets/icons/mongodb.svg" alt="MongoDB" class="sk-svg"/></div><div class="sk-name">MongoDB</div><div class="sk-desc">Document-based database design with Mongoose ODM.</div></div>
+    <div class="sk-card rev d2"><div class="sk-ico" data-skill="REST APIs"><img src="assets/icons/restapi.svg" alt="REST APIs" class="sk-svg"/></div><div class="sk-name">REST APIs</div><div class="sk-desc">Designing and consuming clean, versioned RESTful endpoints.</div></div>
+    <div class="sk-card rev d3"><div class="sk-ico" data-skill="Git"><img src="assets/icons/git.svg" alt="Git" class="sk-svg"/></div><div class="sk-name">Git</div><div class="sk-desc">Version control, branching strategies, and team collaboration.</div></div>
+  </div>
+</section>
+<hr/>
+
+<!-- ═══ PROJECTS ═══ -->
+<section id="projects">
+  <div class="sec-label rev">Portfolio</div>
+  <h2 class="sec-h rev">My <span>Projects</span></h2>
+  <p class="sec-sub rev">Work that ships and makes an impact.</p>
+  <div class="proj-grid">
+    <div class="proj-card rev">
+      <div>
+        <div class="proj-num">Featured Project — 01</div>
+        <div class="proj-name">UserSphere</div>
+        <p class="proj-desc">An AI-ready, role-based user management application built for teams that need fine-grained access control. Features full CRUD operations, JWT authentication, role hierarchies, and an architecture designed from the ground up to integrate intelligent AI-powered workflows.</p>
+        <div class="proj-tags">
+          <span class="ptag">Node.js</span>
+          <span class="ptag">Express</span>
+          <span class="ptag">MongoDB</span>
+          <span class="ptag">REST API</span>
+          <span class="ptag">JWT</span>
+          <span class="ptag">AI-Ready</span>
+        </div>
+      </div>
+      <div class="proj-right">
+        <div class="proj-live-badge"><span class="live-dot"></span>&nbsp;Live</div>
+        <a href="https://app.spacego.online" target="_blank" rel="noopener noreferrer" class="proj-link">Visit Site ↗</a>
+      </div>
+    </div>
+    <div class="proj-card rev d1" style="opacity:.5;pointer-events:none">
+      <div>
+        <div class="proj-num">In Progress — 02</div>
+        <div class="proj-name" style="color:var(--muted)">Next Project</div>
+        <p class="proj-desc">Something in the AI × Web space. Building with intelligence. Stay tuned.</p>
+        <div class="proj-tags"><span class="ptag">AI</span><span class="ptag">Web App</span><span class="ptag">Coming Soon</span></div>
+      </div>
+      <div class="proj-right"></div>
+    </div>
+  </div>
+</section>
+<hr/>
+
+<!-- ═══ CERTIFICATES ═══ -->
+<section id="certificates">
+  <div class="sec-label rev">Credentials</div>
+  <h2 class="sec-h rev">My <span>Certificates</span></h2>
+  <p class="sec-sub rev">Verified credentials from globally recognized institutions.</p>
+  <div class="cert-grid">
+
+    <!-- 1. Prompt Engineering — MeitY NASSCOM -->
+    <div class="cert-card rev">
+      <div class="cert-header">
+        <div class="cert-issuer-badge nasscom">MeitY × NASSCOM</div>
+        <span class="cert-status in-progress">⏳ In Progress</span>
+      </div>
+      <div class="cert-icon">🧠</div>
+      <div class="cert-name">Prompt Engineering: Parameters & Use Cases</div>
+      <div class="cert-meta">FutureSkills Prime &nbsp;·&nbsp; Govt. of India</div>
+      <div class="cert-footer">
+        <span class="cert-date">2026</span>
+        <span class="cert-verify pending">Completing Soon</span>
+      </div>
+    </div>
+
+    <!-- 2. Applications of AI — MeitY NASSCOM -->
+    <div class="cert-card rev d1">
+      <div class="cert-header">
+        <div class="cert-issuer-badge nasscom">MeitY × NASSCOM</div>
+        <span class="cert-status in-progress">⏳ In Progress</span>
+      </div>
+      <div class="cert-icon">🤖</div>
+      <div class="cert-name">Applications of Artificial Intelligence</div>
+      <div class="cert-meta">FutureSkills Prime &nbsp;·&nbsp; Govt. of India</div>
+      <div class="cert-footer">
+        <span class="cert-date">2026</span>
+        <span class="cert-verify pending">Completing Soon</span>
+      </div>
+    </div>
+
+    <!-- 3. Gemini Certified Student — Google -->
+    <div class="cert-card rev d2">
+      <div class="cert-header">
+        <div class="cert-issuer-badge google">Google</div>
+        <span class="cert-status verified">✓ Verified</span>
+      </div>
+      <div class="cert-icon">✦</div>
+      <div class="cert-name">Gemini Certified Student</div>
+      <div class="cert-meta">Google for Education &nbsp;·&nbsp; University</div>
+      <div class="cert-footer">
+        <span class="cert-date">Feb 2026</span>
+        <a href="#" class="cert-verify" target="_blank" rel="noopener">Verify ↗</a>
+      </div>
+    </div>
+
+    <!-- 4. Getting Started with AI — IBM -->
+    <div class="cert-card rev d3">
+      <div class="cert-header">
+        <div class="cert-issuer-badge ibm">IBM</div>
+        <span class="cert-status verified">✓ Verified</span>
+      </div>
+      <div class="cert-icon">💡</div>
+      <div class="cert-name">Getting Started with Artificial Intelligence</div>
+      <div class="cert-meta">IBM SkillsBuild &nbsp;·&nbsp; Credly Badge</div>
+      <div class="cert-footer">
+        <span class="cert-date">Feb 2026</span>
+        <a href="#" class="cert-verify" target="_blank" rel="noopener">Verify ↗</a>
+      </div>
+    </div>
+
+    <!-- 5. Python for Data Science — IBM -->
+    <div class="cert-card rev d4">
+      <div class="cert-header">
+        <div class="cert-issuer-badge ibm">IBM</div>
+        <span class="cert-status verified">✓ Verified</span>
+      </div>
+      <div class="cert-icon">🐍</div>
+      <div class="cert-name">Python for Data Science</div>
+      <div class="cert-meta">IBM Skills Network &nbsp;·&nbsp; Credly Badge</div>
+      <div class="cert-footer">
+        <span class="cert-date">Feb 2026</span>
+        <a href="#" class="cert-verify" target="_blank" rel="noopener">Verify ↗</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<hr/>
+
+<!-- ═══ CONTACT ═══ -->
+<section id="contact">
+  <div class="sec-label rev">Get in Touch</div>
+  <h2 class="sec-h rev">Contact <span>Me</span></h2>
+  <div class="contact-grid">
+    <div class="cinfo rev">
+      <p>Open for internships, freelance projects, and exciting collaborations. If you're building something cool — let's talk.</p>
+      <div class="cdetail">
+        <a href="/cdn-cgi/l/email-protection#87efe2ebebe8c7f5e6e9ede6e9e5e6f5eae6e9a9e3e2f1" class="cdet">
+          <div class="cdet-icon">✉</div>
+          <div class="cdet-text"><div class="cdet-l">Email</div><div class="cdet-v"><span class="__cf_email__" data-cfemail="573f323b3b38172536393d36393536253a363979333221">[email&#160;protected]</span></div></div>
+        </a>
+        <div class="cdet">
+          <div class="cdet-icon">📍</div>
+          <div class="cdet-text"><div class="cdet-l">Location</div><div class="cdet-v">India</div></div>
+        </div>
+      </div>
+      <div class="sec-label" style="margin-bottom:.75rem">Follow Me</div>
+      <div class="social-big">
+        <a href="https://linkedin.com" target="_blank" class="sbig" title="LinkedIn">
+          <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zM7.12 20.45H3.57V9h3.55v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.73V1.73C24 .77 23.21 0 22.23 0z"/></svg>
+        </a>
+        <a href="https://github.com" target="_blank" class="sbig" title="GitHub">
+          <svg viewBox="0 0 24 24"><path d="M12 .3a12 12 0 00-3.79 23.4c.6.1.82-.26.82-.57v-2c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.09-.73.09-.73 1.2.09 1.83 1.24 1.83 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.11-3.17 0 0 1-.32 3.3 1.23a11.5 11.5 0 016 0c2.28-1.55 3.29-1.23 3.29-1.23.65 1.65.25 2.87.12 3.17.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.69.83.57A12 12 0 0012 .3z"/></svg>
+        </a>
+        <a href="https://twitter.com" target="_blank" class="sbig" title="Twitter/X">
+          <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.74l7.73-8.835L1.254 2.25H8.08l4.213 5.567L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="https://instagram.com" target="_blank" class="sbig" title="Instagram">
+          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="rev d1">
+      <form class="cform" id="cform" novalidate>
+        <div class="fg"><label class="fl">Name</label><input class="fi" type="text" placeholder="Your Name" required/></div>
+        <div class="fg"><label class="fl">Email</label><input class="fi" type="email" placeholder="you@example.com" required/></div>
+        <div class="fg"><label class="fl">Subject</label><input class="fi" type="text" placeholder="What's it about?"/></div>
+        <div class="fg"><label class="fl">Message</label><textarea class="ft" placeholder="Tell me about your project..." required></textarea></div>
+        <button type="submit" class="fbtn"><span>Send Message →</span></button>
+        <div class="fok" id="fok">✓ Message sent! I'll get back to you soon.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="ftl">© 2025 <span>Ranjan Barman</span> — Crafted with passion</div>
+  <a href="#hero" class="ftr">Back to Top ↑</a>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
