@@ -243,6 +243,7 @@ body.light .mobile-nav{background:rgba(245,243,239,.97)}
 .mobile-nav.open a:nth-child(4){transition-delay:.24s}
 .mobile-nav.open a:nth-child(5){transition-delay:.30s}
 .mobile-nav.open a:nth-child(6){transition-delay:.36s}
+.mobile-nav.open a:nth-child(7){transition-delay:.42s}
 .mobile-nav a:hover{color:var(--red)}
 
 /* Theme toggle */
@@ -575,6 +576,9 @@ body.light .sk-svg{
 /* Light mode — Express dark */
 body.light .sk-card:hover .sk-ico[data-skill="Express"] .sk-svg{
   filter:brightness(0) opacity(0.8);
+}
+body.light .sk-card:hover .sk-ico[data-skill="JavaScript"] .sk-svg{
+  filter:invert(75%) sepia(60%) saturate(600%) hue-rotate(5deg) brightness(90%) contrast(95%);
 }
 .sk-name{font-size:1rem;font-weight:700;margin-bottom:.4rem;transition:color .3s}
 .sk-card:hover .sk-name{color:var(--red)}

@@ -38,7 +38,6 @@ function downloadCV() {
   showToast('📄 Downloading Resume...');
 }
 
-const navCvBtn = null; // removed from nav
 const heroCvBtn = document.getElementById('heroCvBtn');
 const mobileCvBtn = document.getElementById('mobileCvBtn');
 if(heroCvBtn) heroCvBtn.addEventListener('click', function(e){ e.preventDefault(); downloadCV(); });

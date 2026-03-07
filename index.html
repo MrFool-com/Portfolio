@@ -8,7 +8,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="style.css"/>
 </head>
-</head>
 <body>
 
 <div id="cur"></div>
@@ -322,10 +321,10 @@
     </div>
     <div class="rev d1">
       <form class="cform" id="cform" novalidate>
-        <div class="fg"><label class="fl">Name</label><input class="fi" type="text" name="name" placeholder="Your Name" required/></div>
-        <div class="fg"><label class="fl">Email</label><input class="fi" type="email" name="email" placeholder="you@example.com" required/></div>
-        <div class="fg"><label class="fl">Subject</label><input class="fi" type="text" name="subject" placeholder="What's it about?"/></div>
-        <div class="fg"><label class="fl">Message</label><textarea class="ft" name="message" placeholder="Tell me about your project..." required></textarea></div>
+        <div class="fg"><label class="fl" for="fname">Name</label><input id="fname" class="fi" type="text" name="name" placeholder="Your Name" required/></div>
+        <div class="fg"><label class="fl" for="femail">Email</label><input id="femail" class="fi" type="email" name="email" placeholder="you@example.com" required/></div>
+        <div class="fg"><label class="fl" for="fsubject">Subject</label><input id="fsubject" class="fi" type="text" name="subject" placeholder="What's it about?"/></div>
+        <div class="fg"><label class="fl" for="fmessage">Message</label><textarea id="fmessage" class="ft" name="message" placeholder="Tell me about your project..." required></textarea></div>
         <button type="submit" class="fbtn"><span>Send Message →</span></button>
         <div class="fok" id="fok">✓ Message sent! I'll get back to you soon.</div>
       </form>
@@ -334,7 +333,7 @@
 </section>
 
 <footer>
-  <div class="ftl">© 2025 <span>Ranjan Barman</span> — Crafted with passion</div>
+  <div class="ftl">© 2026 <span>Ranjan Barman</span> — Crafted with passion</div>
   <a href="#hero" class="ftr">Back to Top ↑</a>
 </footer>
 
