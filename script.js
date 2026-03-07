@@ -179,14 +179,27 @@ document.getElementById('cform').addEventListener('submit',function(e){
   const ok  = document.getElementById('fok');
   btn.disabled = true;
   btn.querySelector('span').textContent = 'Sending...';
-  setTimeout(() => {
+
+  fetch('https://formspree.io/f/xqeykwvk', {
+    method: 'POST',
+    headers: { 'Accept': 'application/json' },
+    body: new FormData(this)
+  })
+  .then(res => {
+    if(res.ok) {
+      ok.style.display = 'block';
+      this.reset();
+      showToast('✓ Message sent!');
+      setTimeout(() => { ok.style.display = 'none'; }, 5000);
+    } else {
+      showToast('Something went wrong. Try again.');
+    }
+  })
+  .catch(() => showToast('Something went wrong. Try again.'))
+  .finally(() => {
     btn.disabled = false;
     btn.querySelector('span').textContent = 'Send Message →';
-    ok.style.display = 'block';
-    this.reset();
-    showToast('✓ Message sent!');
-    setTimeout(() => { ok.style.display = 'none'; }, 5000);
-  }, 1200);
+  });
 });
 
 function markError(el, msg){
