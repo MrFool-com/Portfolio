@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <radialGradient id="bg" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#2a1510"/>
+      <stop offset="100%" stop-color="#0f0808"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e8614a" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#e8614a" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="rounded">
+      <rect width="32" height="32" rx="7" ry="7"/>
+    </clipPath>
+  </defs>
+
+  <!-- Base rounded square -->
+  <rect width="32" height="32" rx="7" ry="7" fill="url(#bg)"/>
+
+  <!-- Subtle red glow -->
+  <rect width="32" height="32" rx="7" ry="7" fill="url(#glow)"/>
+
+  <!-- Faint inner border -->
+  <rect x="0.75" y="0.75" width="30.5" height="30.5" rx="6.5" ry="6.5"
+        fill="none" stroke="#e8614a" stroke-opacity="0.15" stroke-width="1"/>
+
+  <!-- RB text -->
+  <text
+    x="16" y="22"
+    font-family="'Poppins', 'Arial Rounded MT Bold', Arial, sans-serif"
+    font-weight="800"
+    font-size="14"
+    fill="#e8614a"
+    text-anchor="middle"
+    letter-spacing="-0.5"
+  >RB</text>
+</svg>

@@ -35,7 +35,7 @@ function downloadCV() {
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
-  showToast('📄 Downloading Resume...');
+  showToast('Downloading Resume...');
 }
 
 const heroCvBtn = document.getElementById('heroCvBtn');
@@ -76,6 +76,7 @@ document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY});
 // ── Nav scroll & active
 const nav=document.getElementById('nav');
 const allA=document.querySelectorAll('.nav-links a');
+const scrollBar=document.getElementById('scroll-progress');
 window.addEventListener('scroll',()=>{
   nav.classList.toggle('s',window.scrollY>60);
   let c='';
@@ -83,6 +84,9 @@ window.addEventListener('scroll',()=>{
     if(window.scrollY>=s.offsetTop-160)c=s.id;
   });
   allA.forEach(a=>a.classList.toggle('act',a.getAttribute('href')==='#'+c));
+  // Scroll progress
+  const docH=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+  if(scrollBar) scrollBar.style.width=(docH>0?(window.scrollY/docH*100):0)+'%';
 });
 
 // ── Typing animation
@@ -151,6 +155,8 @@ document.getElementById('cform').addEventListener('submit',function(e){
   [name, email, message].forEach(el => {
     el.style.borderColor = '';
     el.style.boxShadow = '';
+    const errSpan = el.parentElement.querySelector('.form-err');
+    if(errSpan) errSpan.textContent = '';
   });
 
   let valid = true;
@@ -204,10 +210,11 @@ document.getElementById('cform').addEventListener('submit',function(e){
 function markError(el, msg){
   el.style.borderColor = '#e84a4a';
   el.style.boxShadow   = '0 0 0 2px rgba(232,74,74,.2)';
-  el.placeholder = msg;
-  // Remove error on focus
+  const errSpan = el.parentElement.querySelector('.form-err');
+  if(errSpan) errSpan.textContent = msg;
   el.addEventListener('focus', function(){
     this.style.borderColor = '';
     this.style.boxShadow   = '';
+    if(errSpan) errSpan.textContent = '';
   }, {once: true});
 }
