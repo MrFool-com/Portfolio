@@ -26,12 +26,12 @@ toggleBtn.addEventListener('click', () => {
 });
 
 // ── CV Download (direct, no redirect)
-const CV_B64 = "./assets/Ranjan_Barman_Resume.pdf";
+const CV_B64 = "./assets/Ranjan_Barman_Resume.docx";
 
 function downloadCV() {
   const a = document.createElement('a');
   a.href = CV_B64;
-  a.download = 'Ranjan_Barman_Resume.pdf';
+  a.download = 'Ranjan_Barman_Resume.docx';
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
